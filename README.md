@@ -1,0 +1,2 @@
+# Vidhya-professional-and-technical-college-Bhilwara-Rajasthan-VPTC
+Welcome to the official website project of Vidhya Professional and Technical College (VPTC), Bhilwara. This modern and fully responsive educational website is designed to provide students, parents, and visitors with complete information about the college in a simple, attractive, and professional way.vidhya professional and technical college
