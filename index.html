@@ -880,9 +880,76 @@ function closeForm() {
                     <p class="font-body-lg text-body-lg mb-10 text-white/90">
                         Welcome to VPTC – Bhilwara’s premier institute for Science, IT, Commerce, and Education. Legacy of Excellence since 1996.
                     </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="bg-on-tertiary-container text-white px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all">Explore Programs</button>
-            <!-- Virtual Tour Animated Button -->
+                    <div                     <!-- EXPLORE VPTC BUTTON -->
+<div style="margin-top:-10px; margin-bottom:25px;">
+
+<button id="exploreBtn"
+style="
+position:relative;
+padding:18px 40px;
+font-size:20px;
+font-weight:bold;
+color:white;
+border:none;
+border-radius:18px;
+cursor:pointer;
+overflow:hidden;
+background:linear-gradient(135deg,#7b2ff7,#f107a3,#00c6ff);
+box-shadow:0 0 30px rgba(0,198,255,0.6);
+transition:0.4s;
+animation:floatBtn 2.5s infinite ease-in-out;
+">
+
+🚀 Explore VPTC Program
+
+</button>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup"
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.88);
+z-index:999999;
+justify-content:center;
+align-items:center;
+">
+
+<div style="
+background:#111;
+padding:20px;
+border-radius:20px;
+width:90%;
+max-width:1000px;
+max-height:90vh;
+overflow:auto;
+position:relative;
+color:white;
+">
+
+<!-- CLOSE -->
+<button id="closeBtn"
+style="
+position:absolute;
+top:20px;
+right:30px;
+font-size:50px;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+">
+
+✖
+
+</button>          
+    <!-- Virtual Tour Animated Button -->
 
 <a 
 href="https://maps.app.goo.gl/bpGEFAbJ78MCfv2GA"
