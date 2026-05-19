@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+</head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Vidya Professional and Technical College (VPTC) | Bhilwara</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        /* Welcome Screen */
+
+        #welcome-screen{
+            position: fixed;
+            inset: 0;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            overflow: hidden;
+            animation: hideScreen 2s ease forwards;
+            animation-delay: 5s;
+        }
+
+        .welcome-text{
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: zoomText 4s ease;
+        }
+
+        .welcome-text h1{
+            font-size: 55px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(to right,#ffffff,#00c3ff,#ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .welcome-text p{
+            font-size: 22px;
+            color: #d1d5db;
+            line-height: 40px;
+        }
+
+        /* Zoom Animation */
+
+        @keyframes zoomText{
+
+            0%{
+                transform: scale(0.4);
+                opacity: 0;
+            }
+
+            50%{
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+
+        }
+
+        /* Hide Animation */
+
+        @keyframes hideScreen{
+
+            to{
+                opacity: 0;
+                visibility: hidden;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Welcome Animation -->
+
+    <div id="welcome-screen">
+
+        <div class="welcome-text">
+
+            <h1>
+                Welcome To VPTC
+            </h1>
+
+            <p>
+                Thank You For Visiting My Website ❤️ <br>
+
+                Your Vidya Professional And Technical College, Bhilwara <br>
+
+                God Bless You ✨
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Website Content Start Here -->
+
+</body>
+
+</html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vidya Professional and Technical College (VPTC) | Bhilwara</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#b97958",
+                        "surface": "#f8f9fa",
+                        "background": "#f8f9fa",
+                        "secondary-container": "#dfe0e0",
+                        "on-tertiary-fixed-variant": "#6c391d",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#002147",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed": "#ffdbcb",
+                        "on-primary-container": "#708ab5",
+                        "tertiary-fixed-dim": "#ffb691",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "primary-fixed-dim": "#aec7f6",
+                        "surface-container": "#edeeef",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#e2e2e2",
+                        "inverse-surface": "#2e3132",
+                        "inverse-primary": "#aec7f6",
+                        "on-error-container": "#93000a",
+                        "secondary": "#5d5f5f",
+                        "outline": "#74777f",
+                        "primary": "#000a1e",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary-container": "#616363",
+                        "tertiary-container": "#3d1500",
+                        "on-secondary-fixed-variant": "#454747",
+                        "primary-fixed": "#d6e3ff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#44474e",
+                        "surface": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#180500",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "on-background": "#191c1d",
+                        "outline-variant": "#c4c6cf",
+                        "surface-tint": "#465f88",
+                        "on-tertiary-fixed": "#341100"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-desktop": "48px",
+                        "section-padding-lg": "120px",
+                        "gutter": "24px",
+                        "section-padding-md": "80px",
+                        "margin-mobile": "16px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "caption": ["Inter"],
+                        "headline-sm": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+    <!-- Header / TopNavBar -->
+    <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-margin-desktop h-20 max-w-full mx-auto bg-surface shadow-sm transition-all duration-300">
+<!-- Small Logo + Social -->
+
+<div class="inline-flex items-center gap-3 bg-white px-3 py-2 rounded-2xl shadow-lg">
+
+    <!-- Animated Logo -->
+
+    <div class="vptc-logo">
+
+        VPTC BHILWARA
+
+    </div>
+
+    <!-- Social Media Icons -->
+
+    <div class="flex items-center gap-2">
+
+        <!-- Instagram -->
+
+        <a
+        href="https://www.instagram.com/bablu_k_bairwa_rj06?igsh=ZTgwMnR5djI0OWI="
+        target="_blank"
+        class="social-icon instagram">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+        <!-- Facebook -->
+
+        <a
+        href="https://www.facebook.com/share/15wpx3cCnSL/"
+        target="_blank"
+        class="social-icon facebook">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </a>
+
+        <!-- YouTube -->
+
+        <a
+        href="https://youtube.com/@bk_comedyandvlogs?si=zjIA4JS3ItVz6Myy"
+        target="_blank"
+        class="social-icon youtube">
+
+            <i class="fa-brands fa-youtube"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<style>
+
+    /* Logo */
+
+    .vptc-logo{
+
+        font-size: 16px;
+
+        font-weight: 800;
+
+        padding: 8px 14px;
+
+        border-radius: 12px;
+
+        color: white;
+
+        background: linear-gradient(135deg,#ff6a00,#ee0979,#6a00ff);
+
+        background-size: 300% 300%;
+
+        animation: gradientMove 5s ease infinite;
+
+    }
+
+    /* Social Icons */
+
+    .social-icon{
+
+        width: 34px;
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        color: white;
+
+        font-size: 15px;
+
+        transition: 0.3s;
+
+    }
+
+    .instagram{
+
+        background: linear-gradient(135deg,#feda75,#d62976,#962fbf);
+
+    }
+
+    .facebook{
+
+        background: linear-gradient(135deg,#1877f2,#00c6ff);
+
+    }
+
+    .youtube{
+
+        background: linear-gradient(135deg,#ff0000,#ff4d4d);
+
+    }
+
+    .social-icon:hover{
+
+        transform: scale(1.1);
+
+    }
+
+    /* Animation */
+
+    @keyframes gradientMove{
+
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+
+    }
+
+</style>
+    </div>
+
+</div>
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<style>
+
+    /* Small Logo */
+
+    .vptc-logo{
+
+        font-size: 18px;
+
+        font-weight: 800;
+
+        padding: 10px 18px;
+
+        border-radius: 14px;
+
+        color: white;
+
+        background: linear-gradient(135deg,#ff6a00,#ee0979,#6a00ff);
+
+        background-size: 300% 300%;
+
+        animation:
+        gradientMove 5s ease infinite,
+        logoGlow 2s infinite;
+
+        box-shadow:
+        0 0 12px rgba(255,106,0,0.5),
+        0 0 24px rgba(106,0,255,0.4);
+
+        letter-spacing: 1px;
+
+        transition: 0.4s;
+
+    }
+
+    .vptc-logo:hover{
+
+        transform: scale(1.05);
+
+    }
+
+    /* Social Icons */
+
+    .social-icon{
+
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        color: white;
+
+        font-size: 18px;
+
+        transition: 0.4s;
+
+        animation: iconFloat 2s infinite ease-in-out;
+
+    }
+
+    /* Instagram */
+
+    .instagram{
+
+        background: linear-gradient(135deg,#feda75,#d62976,#962fbf);
+
+        box-shadow: 0 0 15px rgba(214,41,118,0.5);
+
+    }
+
+    /* Facebook */
+
+    .facebook{
+
+        background: linear-gradient(135deg,#1877f2,#00c6ff);
+
+        box-shadow: 0 0 15px rgba(24,119,242,0.5);
+
+    }
+
+    /* YouTube */
+
+    .youtube{
+
+        background: linear-gradient(135deg,#ff0000,#ff4d4d);
+
+        box-shadow: 0 0 15px rgba(255,0,0,0.5);
+
+    }
+
+    /* Hover */
+
+    .social-icon:hover{
+
+        transform: scale(1.15) rotate(6deg);
+
+    }
+
+    /* Animations */
+
+    @keyframes gradientMove{
+
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+
+    }
+
+    @keyframes logoGlow{
+
+        0%{
+            transform: scale(1);
+        }
+
+        50%{
+            transform: scale(1.03);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+
+    }
+
+    @keyframes iconFloat{
+
+        0%{
+            transform: translateY(0px);
+        }
+
+        50%{
+            transform: translateY(-4px);
+        }
+
+        100%{
+            transform: translateY(0px);
+        }
+
+    }
+
+</style>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-primary border-b-2 border-on-tertiary-container pb-1 font-semibold font-label-md text-label-md" href="#">Home</a>
+            <a class="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">About Us</a>
+            <a class="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Academics</a>
+            <a class="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Campus Life</a>
+            <a class="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Placement</a>
+            <a class="text-on-surface-variant font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Contact</a>
+        </nav>
+<!-- Apply Button -->
+
+<button
+onclick="openForm()"
+id="applyBtn"
+class="premium-apply-btn">
+
+    ✨ Apply Now 2026-27 ✨
+
+</button>
+
+
+<style>
+
+    .premium-apply-btn{
+
+        position: fixed;
+
+        bottom: 25px;
+        right: 25px;
+
+        padding: 18px 42px;
+
+        font-size: 20px;
+        font-weight: bold;
+
+        color: white;
+
+        border: none;
+        border-radius: 50px;
+
+        cursor: pointer;
+
+        background: linear-gradient(135deg,#ff512f,#dd2476,#7f00ff);
+
+        background-size: 300% 300%;
+
+        z-index: 9999;
+
+        transition: all 0.4s ease;
+
+        animation:
+        gradientMove 5s ease infinite,
+        floatBtn 2s infinite;
+
+        box-shadow:
+        0 0 20px rgba(255,81,47,0.5),
+        0 0 40px rgba(127,0,255,0.5);
+
+    }
+
+    /* Small Size On Scroll */
+
+    .small-btn{
+
+        padding: 10px 24px !important;
+
+        font-size: 14px !important;
+
+        border-radius: 35px;
+
+        opacity: 0.9;
+
+    }
+
+    /* Hover */
+
+    .premium-apply-btn:hover{
+
+        transform: scale(1.08);
+
+    }
+
+    /* Gradient Animation */
+
+    @keyframes gradientMove{
+
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+
+    }
+
+    /* Floating */
+
+    @keyframes floatBtn{
+
+        0%{
+            transform: translateY(0px);
+        }
+
+        50%{
+            transform: translateY(-5px);
+        }
+
+        100%{
+            transform: translateY(0px);
+        }
+
+    }
+
+</style>
+
+
+<script>
+
+    window.addEventListener("scroll", function(){
+
+        let button = document.getElementById("applyBtn");
+
+        if(window.scrollY > 100){
+
+            button.classList.add("small-btn");
+
+        }else{
+
+            button.classList.remove("small-btn");
+
+        }
+
+    });
+
+</script>
+
+<!-- Popup Background -->
+
+<div
+id="admissionPopup"
+class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
+
+    <!-- Form Box -->
+
+    <div class="bg-white w-full max-w-3xl rounded-3xl p-8 relative overflow-y-auto max-h-[90vh] shadow-2xl">
+
+        <!-- Close Button -->
+
+        <button
+        onclick="closeForm()"
+        class="absolute top-4 right-5 text-3xl font-bold text-red-600">
+
+            ×
+
+        </button>
+
+        <!-- Heading -->
+
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-4">
+            College Admission Form
+        </h2>
+
+        <p class="text-center text-gray-600 mb-10">
+            Fill Your Details For Admission
+        </p>
+
+        <!-- Form -->
+
+        <form action="https://formsubmit.co/vidhyacollege45@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Student Name -->
+
+            <div class="mb-5">
+
+                <label class="font-bold text-lg">
+                    Student Name 👇🏻
+                </label>
+
+                <input
+                type="text"
+                name="Student Name"
+                required
+                placeholder="Enter Full Name"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2">
+
+            </div>
+
+            <!-- Father Name -->
+
+            <div class="mb-5">
+
+                <label class="font-bold text-lg">
+                    Father Name 👇🏻
+                </label>
+
+                <input
+                type="text"
+                name="Father Name"
+                required
+                placeholder="Enter Father Name"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2">
+
+            </div>
+
+            <!-- Mobile -->
+
+            <div class="mb-5">
+
+                <label class="font-bold text-lg">
+                    Mobile Number 📞👇🏻
+                </label>
+
+                <input
+                type="tel"
+                name="Mobile Number"
+                required
+                placeholder="Enter Mobile Number"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2">
+
+            </div>
+
+            <!-- Email -->
+
+            <div class="mb-5">
+
+                <label class="font-bold text-lg">
+                    Email Address ✉️👇🏻
+                </label>
+
+                <input
+                type="email"
+                name="Email"
+                required
+                placeholder="Enter Email"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2">
+
+            </div>
+
+            <!-- Course -->
+
+            <div class="mb-5">
+
+                <label class="font-bold text-lg">
+                    Select Course 🎓👇🏻
+                </label>
+
+                <select
+                name="Course"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2">
+
+                    <option>BCA</option>
+                    <option>B.Sc IT</option>
+                    <option>B.Com</option>
+                    <option>BBA</option>
+                    <option>B.Ed</option>
+
+                </select>
+
+            </div>
+
+            <!-- Address -->
+
+            <div class="mb-6">
+
+                <label class="font-bold text-lg">
+                    Address 🏠👇🏻
+                </label>
+
+                <textarea
+                name="Address"
+                rows="4"
+                placeholder="Enter Address"
+                class="w-full border-2 border-gray-300 p-4 rounded-2xl mt-2"></textarea>
+
+            </div>
+
+            <!-- Submit Button -->
+
+            <button
+            type="submit"
+            class="w-full bg-blue-900 hover:bg-blue-700 text-white py-5 rounded-2xl text-2xl font-bold transition duration-300">
+
+                Submit Admission Form 🚀
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script>
+
+function openForm() {
+
+    document.getElementById("admissionPopup").classList.remove("hidden");
+    document.getElementById("admissionPopup").classList.add("flex");
+
+}
+
+function closeForm() {
+
+    document.getElementById("admissionPopup").classList.remove("flex");
+    document.getElementById("admissionPopup").classList.add("hidden");
+
+}
+
+</script>
+
+</section>
+    </header>
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="VPTC Campus" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEENfyLj9ki2gjj5n5wUIHDZl_zxNfZW3ZnLsvbOoeaz82vwSBQvGGqZz35mAWiet04epZJzCj--N5p8kLwG7UKIEOrQiHrmQzOhlzZpDAaN-3SEyKyL0wRonjkHUvcscv2aIimPdnCz1YpyUDBBdovJVR8yGo9YiDyPa6Nzw0QaHUezMNs6-avSDGLaCHRmf-AoTkrJlPuz7tw-1vod3yuTGl-MWsgqHkAeiYakOM_q99Fd97EMnZv-MQCC_oboUb7y2xGK-E-ySL" />
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="max-w-2xl text-white">
+                    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+                        Empowering Minds, Shaping Futures.
+                    </h1>
+                    <p class="font-body-lg text-body-lg mb-10 text-white/90">
+                        Welcome to VPTC – Bhilwara’s premier institute for Science, IT, Commerce, and Education. Legacy of Excellence since 1996.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-on-tertiary-container text-white px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all">Explore Programs</button>
+            <!-- Virtual Tour Animated Button -->
+
+<a 
+href="https://maps.app.goo.gl/bpGEFAbJ78MCfv2GA"
+target="_blank">
+
+    <button class="study-btn">
+
+        📚 Virtual Campus Tour 🚀
+
+    </button>
+
+</a>
+
+
+<style>
+
+    .study-btn{
+
+        position: relative;
+        padding: 18px 40px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border-radius: 18px;
+        overflow: hidden;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+        background: linear-gradient(135deg,#001f54,#003b99,#005eff);
+        box-shadow: 0 0 25px rgba(0,94,255,0.5);
+
+        animation: floatBtn 2.5s infinite ease-in-out;
+
+    }
+
+    /* Hover Effect */
+
+    .study-btn:hover{
+
+        transform: scale(1.08);
+        box-shadow: 0 0 40px rgba(0,94,255,0.9);
+
+    }
+
+    /* Moving Light Effect */
+
+    .study-btn::before{
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.3);
+        transform: skewX(-25deg);
+
+        animation: shine 3s infinite;
+
+    }
+
+    /* Floating Animation */
+
+    @keyframes floatBtn{
+
+        0%{
+            transform: translateY(0px);
+        }
+
+        50%{
+            transform: translateY(-8px);
+        }
+
+        100%{
+            transform: translateY(0px);
+        }
+
+    }
+
+    /* Shine Animation */
+
+    @keyframes shine{
+
+        0%{
+            left: -100%;
+        }
+
+        100%{
+            left: 150%;
+        }
+
+    }
+
+</style>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature Strip -->
+            <div class="absolute bottom-0 left-0 w-full bg-primary-container/90 backdrop-blur-md py-6 text-white overflow-x-auto whitespace-nowrap">
+                <div class="max-w-container-max mx-auto px-margin-desktop flex justify-around items-center gap-12">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-on-tertiary-container" data-icon="verified">verified</span>
+                        <span class="font-label-md text-label-md">MDSU Affiliated</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-on-tertiary-container" data-icon="park">park</span>
+                        <span class="font-label-md text-label-md">10-Acre Green Campus</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-on-tertiary-container" data-icon="computer">computer</span>
+                        <span class="font-label-md text-label-md">Advanced Tech Labs</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-on-tertiary-container" data-icon="work">work</span>
+                        <span class="font-label-md text-label-md">100% Placement Assistance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us -->
+        <section class="py-section-padding-md md:py-section-padding-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-on-tertiary-container font-label-md tracking-[0.2em] uppercase mb-4 block">The VPTC Edge</span>
+                <h2 class="font-headline-md text-headline-md text-primary">Why We Are Bhilwara’s First Choice?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                <!-- USP 1 -->
+                <div class="p-8 bg-white border border-outline-variant rounded-xl hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-primary-container/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="microscope">magnification_small</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Pioneer in Microbiology</h3>
+                    <p class="text-on-surface-variant font-body-md">Best B.Sc Microbiology in the region with dedicated research facilities and industrial collaborations.</p>
+                </div>
+                <!-- USP 2 -->
+                <div class="p-8 bg-white border border-outline-variant rounded-xl hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-primary-container/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="terminal">terminal</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Future-Ready IT Hub</h3>
+                    <p class="text-on-surface-variant font-body-md">BCA &amp; B.Sc IT with modern coding labs and focus on emerging technologies like AI and Full Stack.</p>
+                </div>
+                <!-- USP 3 -->
+                <div class="p-8 bg-white border border-outline-variant rounded-xl hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-primary-container/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="school">school</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Integrated Education</h3>
+                    <p class="text-on-surface-variant font-body-md">Save a year with B.A. B.Ed &amp; B.Sc. B.Ed programs designed for modern pedagogies.</p>
+                </div>
+                <!-- USP 4 -->
+                <div class="p-8 bg-white border border-outline-variant rounded-xl hover:shadow-xl transition-all group">
+                    <div class="w-14 h-14 bg-primary-container/5 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary group-hover:text-white" data-icon="stars">stars</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-4">Skill-First Approach</h3>
+                    <p class="text-on-surface-variant font-body-md">Heavy focus on practical knowledge, leadership training, and personality development modules.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Academic Excellence -->
+        <section class="bg-surface-container-low py-section-padding-md">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 class="font-headline-md text-headline-md text-primary mb-4">Academic Excellence</h2>
+                        <p class="text-on-surface-variant max-w-xl">Our curriculum is designed to bridge the gap between academic theory and professional practice.</p>
+                    </div>
+                    <a class="text-primary font-label-md flex items-center gap-2 hover:underline" href="#">View All Courses <span class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Course Card 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border-t-4 border-on-tertiary-container">
+                        <div class="p-8">
+                            <h4 class="font-label-md text-on-tertiary-container mb-4">Tech &amp; Management</h4>
+                            <ul class="space-y-3 font-headline-sm text-headline-sm text-primary">
+                                <li>BCA</li>
+                                <li>BBA</li>
+                            </ul>
+                            <div class="mt-8 pt-6 border-t border-outline-variant flex justify-between items-center">
+                                <span class="text-on-surface-variant text-caption">3 Years Program</span>
+                                <span class="material-symbols-outlined text-primary" data-icon="east">east</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border-t-4 border-primary">
+                        <div class="p-8">
+                            <h4 class="font-label-md text-on-tertiary-container mb-4">Sciences</h4>
+                            <ul class="space-y-3 font-headline-sm text-headline-sm text-primary">
+                                <li>B.Sc (Microbiology)</li>
+                                <li>B.Sc (IT)</li>
+                                <li>B.Sc (PCM / Bio)</li>
+                            </ul>
+                            <div class="mt-8 pt-6 border-t border-outline-variant flex justify-between items-center">
+                                <span class="text-on-surface-variant text-caption">Specialized Labs</span>
+                                <span class="material-symbols-outlined text-primary" data-icon="east">east</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border-t-4 border-on-tertiary-container">
+                        <div class="p-8">
+                            <h4 class="font-label-md text-on-tertiary-container mb-4">Arts &amp; Commerce</h4>
+                            <ul class="space-y-3 font-headline-sm text-headline-sm text-primary">
+                                <li>B.A.</li>
+                                <li>B.Com</li>
+                            </ul>
+                            <div class="mt-8 pt-6 border-t border-outline-variant flex justify-between items-center">
+                                <span class="text-on-surface-variant text-caption">Legacy Courses</span>
+                                <span class="material-symbols-outlined text-primary" data-icon="east">east</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Card 4 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all border-t-4 border-primary">
+                        <div class="p-8">
+                            <h4 class="font-label-md text-on-tertiary-container mb-4">Teachers' Training</h4>
+                            <ul class="space-y-3 font-headline-sm text-headline-sm text-primary">
+                                <li>B.Ed / D.El.Ed</li>
+                                <li>Integrated B.A. B.Ed</li>
+                                <li>Integrated B.Sc. B.Ed</li>
+                            </ul>
+                            <div class="mt-8 pt-6 border-t border-outline-variant flex justify-between items-center">
+                                <span class="text-on-surface-variant text-caption">4 Years Integrated</span>
+                                <span class="material-symbols-outlined text-primary" data-icon="east">east</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Campus Life & Facilities -->
+        <section class="py-section-padding-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <h2 class="font-headline-md text-headline-md text-primary text-center mb-16">World-Class Campus &amp; Facilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+                <div class="md:col-span-3 md:row-span-2 relative group overflow-hidden rounded-xl bg-primary">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all z-10"></div>
+                    <div class="absolute bottom-0 left-0 p-8 z-20 text-white">
+                        <span class="material-symbols-outlined text-on-tertiary-container mb-4 text-4xl" data-icon="library_books">library_books</span>
+                        <h4 class="font-headline-sm text-headline-sm">Digital Library</h4>
+                        <p class="text-white/80 mt-2">Access to thousands of journals, ebooks, and a quiet learning space.</p>
+                    </div>
+                    <div class="h-full w-full bg-cover bg-center" data-alt="A sophisticated modern university library with tall wooden bookshelves, sleek digital kiosks, and students quietly working at communal desks. Warm, atmospheric lighting creates an inviting and scholarly environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1B3FLQdz813lLXTFl6XC3bx7mNGS3eLKbz-EeBAIBuiZ1VfKNkvc3xwasIHhzg5z_8cnFnd1fAJ6f__HQMmfD4UresSX-ds6KZYzPBJwC3M71DZl0QV3ET5cWBLlfkuXA23z5z8VwBQfpr3n6sgORxfaxs0X-maMgNYhvw9L8MRABj2KAxXrrMj5--XoOfM5K0L2B-u6_LPc1c2AeNAjXD33obIImKopFPk35PVQE_MUEmZ_z9RCfIme7PKpKpdNFBVo4pWq96dHb')"></div>
+                </div>
+                <div class="md:col-span-3 bg-primary-container rounded-xl p-8 flex flex-col justify-center text-white">
+                    <div class="flex items-center gap-6 mb-4">
+                        <span class="material-symbols-outlined text-on-tertiary-container text-3xl" data-icon="sports_basketball">sports_basketball</span>
+                        <h4 class="font-headline-sm text-headline-sm">Sports Complex</h4>
+                    </div>
+                    <p class="text-on-primary-container"80>Promoting physical excellence with courts for basketball, volleyball, and indoor gaming zones.</p>
+                </div>
+                <div class="md:col-span-1 bg-surface-container-high rounded-xl p-6 flex flex-col items-center justify-center text-center group hover:bg-on-tertiary-container hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white mb-2" data-icon="restaurant">restaurant</span>
+                    <span class="font-label-md">Cafeteria</span>
+                </div>
+
+
+<!-- Hostel Click Box -->
+
+<div onclick="openHostelGallery()"
+class="md:col-span-1 bg-surface-container-high rounded-xl p-6 flex flex-col items-center justify-center text-center group hover:bg-blue-900 hover:text-white transition-all cursor-pointer">
+
+    <span class="material-symbols-outlined text-primary group-hover:text-white mb-2 text-4xl">
+        apartment
+    </span>
+
+    <span class="font-label-md text-lg font-bold">
+        Hostel
+    </span>
+
+</div>
+
+
+<!-- Popup Gallery -->
+
+<div id="hostelGallery"
+class="fixed inset-0 bg-black/90 hidden z-50 overflow-y-auto">
+
+    <!-- Close Button -->
+
+    <button onclick="closeHostelGallery()"
+    class="fixed top-5 right-5 bg-red-600 text-white px-5 py-3 rounded-full text-xl font-bold z-50">
+        ✕
+    </button>
+
+    <!-- Images -->
+
+    <div class="max-w-6xl mx-auto py-24 px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <!-- Photo 1 -->
+
+        <div class="overflow-hidden rounded-3xl shadow-2xl">
+            <img
+            src="https://photos.app.goo.gl/XQmrXw8CAGddhz429"
+            class="w-full h-[500px] object-cover hover:scale-105 transition duration-700">
+        </div>
+
+        <!-- Photo 2 -->
+
+        <div class="overflow-hidden rounded-3xl shadow-2xl">
+            <img
+            src="https://photos.app.goo.gl/Sj798qwLaeokvmFt5"
+            class="w-full h-[500px] object-cover hover:scale-105 transition duration-700">
+        </div>
+
+        <!-- Photo 3 -->
+
+        <div class="overflow-hidden rounded-3xl shadow-2xl md:col-span-2">
+            <img
+            src="https://photos.app.goo.gl/C15uee4id7FhQMn66"
+            class="w-full h-[700px] object-cover hover:scale-105 transition duration-700">
+        </div>
+<!-- Photo 4 -->
+
+        <div class="overflow-hidden rounded-3xl shadow-2xl md:col-span-2">
+            <img
+            src="https://photos.app.goo.gl/j5DT3DgdtfE6MPFK8"
+            class="w-full h-[700px] object-cover hover:scale-105 transition duration-700">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script>
+
+function openHostelGallery() {
+    document.getElementById("hostelGallery").classList.remove("hidden");
+}
+
+function closeHostelGallery() {
+    document.getElementById("hostelGallery").classList.add("hidden");
+}
+
+</script>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+                </div>
+                <div class="md:col-span-1 bg-surface-container-high rounded-xl p-6 flex flex-col items-center justify-center text-center group hover:bg-on-tertiary-container hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-primary group-hover:text-white mb-2" data-icon="smart_display">smart_display</span>
+                    <span class="font-label-md">Smart Class</span>
+                </div>
+                
+                <span class="font-label-md">>contact☎️📞:
+                    9509852061 </span>
+                    
+            </div>
+            <span class="font-labe\-md">>✉️*email=vidhyacollege45@gmail.com  </span>
+                </div>
+        </section>
+        <!-- Placement Cell -->
+        <section class="bg-primary py-section-padding-md">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+                <div class="inline-block px-4 py-2 bg-on-tertiary-container text-white font-label-md rounded-full mb-8">Career Focused</div>
+                <h2 class="font-headline-md text-headline-md text-white mb-6">Launch Your Career with VPTC Placement Cell</h2>
+                
+                
+                <div />
+                
+                
+                
+            </div>
+            </span>
+            <p class="text-primary-fixed
+ 
+<section id="contact" class="py-20 bg-gray-100">
+
+  <div class="max-w-4xl mx-auto bg-white p-10 rounded-3xl shadow-2xl">
+
+    <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">
+      Contact Us
+    </h2>
+
+    <form action="https://formsubmit.co/vidhyacollege45@gmail.com" method="POST">
+
+      <!-- Name -->
+
+      <label class="font-bold text-lg">
+        Enter Your Name 👇🏻
+      </label>
+
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your Name"
+        class="w-full border-2 border-gray-300 p-4 rounded-xl mb-6 mt-2"
+      >
+
+      <!-- Mobile Number -->
+
+      <label class="font-bold text-lg">
+        Your Contact Number 📞👇🏻
+      </label>
+
+      <input
+        type="tel"
+        name="mobile"
+        required
+        placeholder="Enter Mobile Number"
+        class="w-full border-2 border-gray-300 p-4 rounded-xl mb-6 mt-2"
+      >
+
+      <!-- Email -->
+
+      <label class="font-bold text-lg">
+        Your Email ✉️👇🏻
+      </label>
+
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Enter Email"
+        class="w-full border-2 border-gray-300 p-4 rounded-xl mb-6 mt-2"
+      >
+
+      <!-- Message -->
+
+      <label class="font-bold text-lg">
+        Your Message 💬👇🏻
+      </label>
+
+      <textarea
+        name="message"
+        rows="5"
+        required
+        placeholder="Write Your Message"
+        class="w-full border-2 border-gray-300 p-4 rounded-xl mb-8 mt-2"
+      ></textarea>
+
+      <!-- Hidden -->
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Submit Button -->
+
+      <button
+        type="submit"
+        class="bg-blue-900 hover:bg-blue-700 text-white px-10 py-4 rounded-xl text-xl font-bold w-full transition"
+      >
+        Submit Now 🚀
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- Student Gallery -->
+
+<section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-5xl font-bold text-center text-primary mb-14">
+            Student Gallery
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Photo 1 -->
+
+            <div class="overflow-hidden rounded-3xl shadow-2xl group">
+                <img 
+                src="<a href="https://ibb.co/RkqMyB3w"><img src="https://i.ibb.co/RkqMyB3w/IMG-20251114-WA0044.jpg" alt="IMG-20251114-WA0044" border="0"></a> <a href="https://ibb.co/JR237JWq"><img src="https://i.ibb.co/JR237JWq/IMG-0524.avif" alt="IMG-0524" border="0"></a> <a href="https://ibb.co/V0cbTGYT"><img src="https://i.ibb.co/V0cbTGYT/IMG-0500.avif" alt="IMG-0500" border="0"></a> <a href="https://ibb.co/602Pw26h"><img src="https://i.ibb.co/602Pw26h/IMG-0501.avif" alt="IMG-0501" border="0"></a> <a href="https://ibb.co/bgNSMYFH"><img src="https://i.ibb.co/bgNSMYFH/IMG-20251114-WA0059.jpg" alt="IMG-20251114-WA0059" border="0"></a>"
+                class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            
+<div class="overflow-hidden rounded-3xl shadow-2xl group">
+    <img 
+    src="https://photos.app.goo.gl/urkN92skZmN2BmAX6"
+    class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+</div>
+    </div>
+
+<!-- Cute Creator Footer -->
+
+<a
+href="https://www.instagram.com/bablu_k_bairwa_rj06?igsh=MWFnZzRneWw3YjA4Yg=="
+target="_blank"
+class="creator-tag">
+
+    ✨ Made With ❤️ By @babloo_k_bairwa_rj06 ✨
+
+</a>
+
+
+<style>
+
+    .creator-tag{
+
+        display: inline-block;
+
+        margin: 40px auto;
+
+        padding: 12px 24px;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        font-size: 15px;
+
+        font-weight: bold;
+
+        color: white;
+
+        background: linear-gradient(135deg,#ff6a00,#ee0979,#7f00ff);
+
+        background-size: 300% 300%;
+
+        animation:
+        gradientFlow 5s ease infinite,
+        cuteFloat 2s infinite ease-in-out;
+
+        box-shadow:
+        0 0 15px rgba(255,105,180,0.5),
+        0 0 30px rgba(127,0,255,0.4);
+
+        transition: 0.4s;
+
+    }
+
+    .creator-tag:hover{
+
+        transform: scale(1.08) rotate(-2deg);
+
+        box-shadow:
+        0 0 25px rgba(255,105,180,0.9),
+        0 0 45px rgba(127,0,255,0.8);
+
+    }
+
+    /* Center */
+
+    body{
+
+        text-align: center;
+
+    }
+
+    /* Gradient Animation */
+
+    @keyframes gradientFlow{
+
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+
+    }
+
+    /* Floating */
+
+    @keyframes cuteFloat{
+
+        0%{
+            transform: translateY(0px);
+        }
+
+        50%{
+            transform: translateY(-5px);
+        }
+
+        100%{
+            transform: translateY(0px);
+        }
+
+    }
+
+</style>
