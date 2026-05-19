@@ -842,7 +842,6 @@ class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50 p-4">
 
 </div>
 
-
 <!-- JavaScript -->
 
 <script>
@@ -864,50 +863,78 @@ function closeForm() {
 </script>
 
 </section>
-    </header>
-    <main class="mt-20">
-        <!-- Hero Section -->
-        <section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
-            <div class="absolute inset-0 z-0">
-                <img alt="VPTC Campus" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEENfyLj9ki2gjj5n5wUIHDZl_zxNfZW3ZnLsvbOoeaz82vwSBQvGGqZz35mAWiet04epZJzCj--N5p8kLwG7UKIEOrQiHrmQzOhlzZpDAaN-3SEyKyL0wRonjkHUvcscv2aIimPdnCz1YpyUDBBdovJVR8yGo9YiDyPa6Nzw0QaHUezMNs6-avSDGLaCHRmf-AoTkrJlPuz7tw-1vod3yuTGl-MWsgqHkAeiYakOM_q99Fd97EMnZv-MQCC_oboUb7y2xGK-E-ySL" />
-                <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+
+</header>
+
+<main class="mt-20">
+
+<!-- Hero Section -->
+
+<section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+
+    <div class="absolute inset-0 z-0">
+
+        <img
+        alt="VPTC Campus"
+        class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEENfyLj9ki2gjj5n5wUIHDZl_zxNfZW3ZnLsvbOoeaz82vwSBQvGGqZz35mAWiet04epZJzCj--N5p8kLwG7UKIEOrQiHrmQzOhlzZpDAaN-3SEyKyL0wRonjkHUvcscv2aIimPdnCz1YpyUDBBdovJVR8yGo9YiDyPa6Nzw0QaHUezMNs6-avSDGLaCHRmf-AoTkrJlPuz7tw-1vod3yuTGl-MWsgqHkAeiYakOM_q99Fd97EMnZv-MQCC_oboUb7y2xGK-E-ySL"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+
+    </div>
+
+    <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+
+        <div class="max-w-2xl text-white">
+
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+
+                Empowering Minds, Shaping Futures.
+
+            </h1>
+
+            <p class="font-body-lg text-body-lg mb-10 text-white/90">
+
+                Welcome to VPTC – Bhilwara’s premier institute for Science, IT, Commerce, and Education. Legacy of Excellence since 1996.
+
+            </p>
+
+            <!-- EXPLORE VPTC BUTTON -->
+
+            <div style="margin-top:-10px; margin-bottom:25px;">
+
+                <button id="exploreBtn"
+                style="
+                position:relative;
+                padding:18px 40px;
+                font-size:20px;
+                font-weight:bold;
+                color:white;
+                border:none;
+                border-radius:18px;
+                cursor:pointer;
+                overflow:hidden;
+                background:linear-gradient(135deg,#7b2ff7,#f107a3,#00c6ff);
+                box-shadow:0 0 30px rgba(0,198,255,0.6);
+                transition:0.4s;
+                animation:floatBtn 2.5s infinite ease-in-out;
+                ">
+
+                🚀 Explore VPTC Program
+
+                </button>
+
             </div>
-            <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-                <div class="max-w-2xl text-white">
-                    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
-                        Empowering Minds, Shaping Futures.
-                    </h1>
-                    <p class="font-body-lg text-body-lg mb-10 text-white/90">
-                        Welcome to VPTC – Bhilwara’s premier institute for Science, IT, Commerce, and Education. Legacy of Excellence since 1996.
-                    </p>
-                               
-                        <!-- EXPLORE VPTC BUTTON -->
-<div style="margin-top:-10px; margin-bottom:25px;">
 
-<button id="exploreBtn"
-style="
-position:relative;
-padding:18px 40px;
-font-size:20px;
-font-weight:bold;
-color:white;
-border:none;
-border-radius:18px;
-cursor:pointer;
-overflow:hidden;
-background:linear-gradient(135deg,#7b2ff7,#f107a3,#00c6ff);
-box-shadow:0 0 30px rgba(0,198,255,0.6);
-transition:0.4s;
-animation:floatBtn 2.5s infinite ease-in-out;
-">
+        </div>
 
-🚀 Explore VPTC Program
+    </div>
 
-</button>
-
-</div>
+</section>
 
 <!-- POPUP -->
+
 <div id="popup"
 style="
 display:none;
@@ -922,34 +949,157 @@ justify-content:center;
 align-items:center;
 ">
 
-<div style="
-background:#111;
-padding:20px;
-border-radius:20px;
-width:90%;
-max-width:1000px;
-max-height:90vh;
-overflow:auto;
-position:relative;
-color:white;
+    <div style="
+    background:#111;
+    padding:20px;
+    border-radius:20px;
+    width:90%;
+    max-width:1000px;
+    max-height:90vh;
+    overflow:auto;
+    position:relative;
+    color:white;
+    ">
+
+        <!-- CLOSE -->
+
+        <button id="closeBtn"
+        style="
+        position:absolute;
+        top:20px;
+        right:30px;
+        font-size:50px;
+        background:none;
+        border:none;
+        color:white;
+        cursor:pointer;
+        ">
+
+        ✖
+
+        </button>
+<!-- TITLE -->
+
+<h1 style="
+font-size:32px;
+font-weight:bold;
+text-align:center;
+margin-bottom:20px;
 ">
 
-<!-- CLOSE -->
-<button id="closeBtn"
-style="
-position:absolute;
-top:20px;
-right:30px;
-font-size:50px;
-background:none;
-border:none;
-color:white;
-cursor:pointer;
-">
+✨ VPTC Gallery ✨
 
-✖
+</h1>
 
-</button>          
+        ✨ VPTC Gallery ✨
+
+        </h1>
+
+        <!-- DESCRIPTION -->
+
+        <p style="
+        text-align:center;
+        color:#ccc;
+        margin-bottom:25px;
+        ">
+
+        Upload and explore campus memories 📸
+
+        </p>
+
+        <!-- UPLOAD BUTTON -->
+
+        <div style="text-align:center; margin-bottom:25px;">
+
+            <label for="photoUpload"
+            style="
+            display:inline-block;
+            padding:14px 28px;
+            background:linear-gradient(135deg,#00c6ff,#0072ff);
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            border-radius:14px;
+            cursor:pointer;
+            box-shadow:0 0 20px rgba(0,198,255,0.7);
+            ">
+
+            📸 Upload / Take Photo
+
+            </label>
+
+            <input
+            type="file"
+            id="photoUpload"
+            accept="image/*"
+            capture="environment"
+            hidden
+            >
+
+        </div>
+
+        <!-- GALLERY -->
+
+        <div id="gallery"
+        style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:15px;
+        ">
+
+        </div>
+
+    </div>
+  
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+// OPEN POPUP
+
+document.getElementById("exploreBtn")
+.onclick = function(){
+
+document.getElementById("popup")
+.style.display = "flex";
+
+};
+
+// CLOSE POPUP
+
+document.getElementById("closeBtn")
+.onclick = function(){
+
+document.getElementById("popup")
+.style.display = "none";
+
+};
+
+</script>
+
+<!-- FLOAT BUTTON ANIMATION -->
+
+<style>
+
+@keyframes floatBtn{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+    </style>          
     <!-- Virtual Tour Animated Button -->
 
 <a 
